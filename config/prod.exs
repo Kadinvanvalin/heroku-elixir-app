@@ -11,7 +11,7 @@ config :kadinvanvalin, KadinvanvalinWeb.Endpoint,
 config :logger, level: :info
 
 # Configure your database
-config :kadinvanvalin, KadinvanvalinWeb.Repo,
+config :kadinvanvalin, KadinvanvalinWeb.Endpoint,
   adapter: Ecto.Adapters.Postgres,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   ssl: true,
